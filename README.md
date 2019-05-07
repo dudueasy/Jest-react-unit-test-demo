@@ -1,5 +1,4 @@
-# A React Jest Enzyme Unit Testing Boilerplate
-## Available Scripts
+# A Test Driven React Redux Project Developed with Jest & Enzyme 
 
 # 项目启动项命令
 
