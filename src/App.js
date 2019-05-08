@@ -9,8 +9,8 @@ let tempArr = [{
   lName: 'Du',
   email: '123@gmail.com',
   age: 20,
-  onlineStatus: 1,
-}]
+  onlineStatus: true,
+}];
 
 function App() {
   return (
