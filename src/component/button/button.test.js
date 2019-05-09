@@ -39,6 +39,26 @@ describe('Button component', () => {
       expect(button.exists()).toBeTruthy();
     });
   });
+
+
+  describe('when clicked', () => {
+    test('calls bound eventHandler ', () => {
+      const eventHandler = jest.fn(() => {
+        console.log('eventHandler is called');
+      });
+
+      const props = {
+        buttonText: 'Example Button Text',
+        emitEvent: eventHandler,
+      };
+
+      let wrapper = shallow(<SharedButton {...props} />);
+
+      wrapper.simulate('click');
+      expect(eventHandler).toHaveBeenCalledTimes(1);
+
+    });
+  });
 });
 
 
