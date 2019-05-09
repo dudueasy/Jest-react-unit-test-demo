@@ -36,7 +36,6 @@ describe('Headline component', () => {
 
 
     });
-
   });
 
   describe('Have props ', () => {
