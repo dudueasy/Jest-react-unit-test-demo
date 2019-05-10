@@ -3,7 +3,7 @@ import thunk from 'redux-thunk';
 
 import RootReducer from './reducers';
 
-const middlewares = [thunk];
+export const middlewares = [thunk];
 
 // applyMiddleware return a store enhancer,
 // which receive storeCreator and return a new storeCreator
