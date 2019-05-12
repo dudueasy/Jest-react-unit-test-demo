@@ -6,7 +6,6 @@ import ListItem from './component/listItem';
 import {connect} from 'react-redux';
 import {fetchPosts} from './actions';
 import './app.scss';
-import {renderedDive} from 'enzyme/src/Utils';
 
 class App extends React.Component {
 
@@ -21,7 +20,7 @@ class App extends React.Component {
 
 
     return (
-      <div className="App">
+      <div className="App" data-test="appComponent">
         <Header/>
         <section className="main">
           <Headline
@@ -31,8 +30,8 @@ class App extends React.Component {
 
           <SharedButton {...ButtonConfig}/>
 
-          {posts.length > 0 ? <div>
-            {posts.map((post, index) => (<ListItem key={post.id} title={post.title} desc={post.body}/>))}
+          {posts && posts.length > 0 ? <div>
+            {posts.map((post, index) => (<ListItem key={index} title={post.title} desc={post.body}/>))}
           </div> : null
           }
 
@@ -54,5 +53,6 @@ const mapDispatchToProps = {
   fetchPosts: fetchPosts,
 };
 
+export {App};
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
