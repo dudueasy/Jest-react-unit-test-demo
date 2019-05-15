@@ -1,11 +1,7 @@
 # A Test Driven React Redux Project Developed with Jest & Enzyme 
 
-# 开发阶段(分支)
-* stage 1:
-[初始化工程配置](https://github.com/dudueasy/Jest-react-unit-test-demo/tree/initial-boilerplate)
-
-* stage 2:
-[引入prop-types & check-prop-types 以测试组件参数](https://github.com/dudueasy/Jest-react-unit-test-demo/tree/initial-boilerplate)
+# stage 3: 分支 - 引入和测试 Redux
+项目引入了 redux, react-redux@7 和 moxios. 添加了对 Redux Store 和 Connected 组件的测试用例.
 
 
 # 项目启动项命令
