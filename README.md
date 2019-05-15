@@ -8,6 +8,9 @@
 [引入prop-types & check-prop-types 以测试组件参数](https://github.com/dudueasy/Jest-react-unit-test-demo/tree/initial-boilerplate)
 
 
+* stage 3:
+[implementing-redux redux 相关测试](https://github.com/dudueasy/Jest-react-unit-test-demo/tree/implementing-redux)
+
 # 项目启动项命令
 
 ### `npm start` 
